@@ -1,9 +1,3 @@
-#в папке с прогой должен быть cns file
-#папка bed_files_2 co всеми coverage файлами
-#files_length.txt
-#папка oncotree для подсчета вероятностей cnv
-#запуск из папки output_dir 
-
 template=`cat inf | tail -n 1`
 sample_bed_file=`ls bed_files_2 | grep $template`
 files=`ls bed_files_2 | grep -v $sample_bed_file`
