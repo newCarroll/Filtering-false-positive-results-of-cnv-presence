@@ -6,7 +6,8 @@ This methos based on Bayesian model and showed good theoretical results, but thi
 
 To start you should make some preparations:
 
-Firstly you should have coverage files from "bedtools coverage" for all sample files.
+Firstly you should have coverage files from "bedtools coverage" for all sample files. 
+All files shuold have normalized coverage, otherwise you should create file "files_length.txt" with count of reads for every bedfile for every sample.
 After that you must change file "run_filter":
 1) you should have folder with  cnv probablity for every gen of cancer kind and this folder should have name "cnv_probabilities".
 2) also all existed coverage files must be in folder "bed_files"
