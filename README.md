@@ -17,7 +17,11 @@ File should contain:
   
 Note, cancer_kind must be named as cnv probabilty file in cnv_probobalites folder.
 
-So, you can start filering - just run "start_filter" script.
+4) You can run scripts without cns file of CNVkit, but it is strongly recommended to use cns file to more accurate results. 
+
+
+So, you can start filering - just run "start_filter" script. 
+
 
 
 
