@@ -1,0 +1,24 @@
+#в папке с прогой должен быть cns file
+#папка bed_files_2 co всеми coverage файлами
+#files_length.txt
+#папка oncotree для подсчета вероятностей cnv
+#запуск из папки output_dir 
+
+template=`cat inf | tail -n 1`
+sample_bed_file=`ls bed_files_2 | grep $template`
+files=`ls bed_files_2 | grep -v $sample_bed_file`
+cns_file=`ls | grep call`
+dirname=results_size_300
+mkdir $dirname
+for i in $files; do cd bed_files_2; if [ "$i" != "$sample_bed_file" ]; then python3 ../accross_cnvkit_regions.py ../$cns_file  $sample_bed_file $i > ../$dirname/result_$i.txt; fi; cd .. ; done;
+cd $dirname
+result_files=`ls | grep result`
+python3 ../difference_in_files.py $result_files > ../bed_files_2/strange_gen_deletion.txt
+cd .. 
+cd bed_files_2
+mv ../oncotree ./
+mv ../files_length.txt ./
+python3 ../all_in_one_file.py ../$cns_file $sample_bed_file $files > result_7
+mv ./oncotree ../
+mv files_length.txt ../
+cd ..
