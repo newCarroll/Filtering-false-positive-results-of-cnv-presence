@@ -18,27 +18,64 @@ File should contain:
   
 Note, cancer_kind must be named as cnv probabilty file in cnv_probobalites folder.
 
-Fourthly, you can run scripts without cns file of CNVkit, but it is strongly recommended to use cns file for more accurate results. 
+Fourthly, you can run scripts without cns file after CNVkit, but it is strongly recommended to use cns file for more accurate results. 
 
 So, folder tree must be like that:
 Filtering folder
+
+
 |
+
+
+
 |__bed_files
-|   |_coverage_file1
-|   |_covearge_file2
-|   |...
+
+
+|       |_coverage_file1
+
+
+|       |_covearge_file2
+
+
+|       |...
+
+
 |
+
+
 |__cnv_probabilities
-|   |_ovary
-|   |_stomach
-|   |_cancer_kind3
-|   |... 
+
+
+|       |_ovary
+
+
+|       |_stomach
+
+
+|       |_cancer_kind3
+
+
+|       |... 
+
+
 |
+
+
 |__src
+
+
 |
+
+
 |__cns_file
+
+
 |__files_length.txt
+
+
 |__start_filter
+
+
 |__inf
 
 So, you can start filering - just run "start_filter" script.
