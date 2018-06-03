@@ -21,29 +21,24 @@ Note, cancer_kind must be named as cnv probabilty file in cnv_probobalites folde
 Fourthly, you can run scripts without cns file after CNVkit, but it is strongly recommended to use cns file for more accurate results. 
 
 So, folder tree must be like that:
-Filtering folder
 
 
+Project folder
 |
 
 
-
-|_____bed_files
-
-
-|       |_____coverage_file1
+|__bed_files
 
 
-|       |_____covearge_file2
+|__coverage_file1
 
 
-|       |_____...
+
+   |__covearge_file2
 
 
-|
-
-
-|_____cnv_probabilities
+   |__...
+-cnv_probabilities
 
 
 |       |_____ovary
