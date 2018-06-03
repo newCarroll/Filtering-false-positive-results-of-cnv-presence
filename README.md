@@ -22,56 +22,21 @@ Fourthly, you can run scripts without cns file after CNVkit, but it is strongly 
 
 So, folder tree must be like that:
 
-
-Project folder
+project folder
+├── bed_files
+│   └── coverage_file1
+|   └── coverage_file2 
+│       
+└── cnv_probabilities
+|   ├── ovary
+|   └── stomach
 |
+└── src
+└── inf
+└── files_length.txt
+└── cns_file
+└── start_filter
 
-
-|__bed_files
-
-
-|__coverage_file1
-
-
-
-   |__covearge_file2
-
-
-   |__...
--cnv_probabilities
-
-
-|       |_____ovary
-
-
-|       |_____stomach
-
-
-|       |_____cancer_kind3
-
-
-|       |_____... 
-
-
-|
-
-
-|_____src
-
-
-|
-
-
-|_____cns_file
-
-
-|_____files_length.txt
-
-
-|_____start_filter
-
-
-|_____inf
 
 So, you can start filering - just run "start_filter" script.
 
