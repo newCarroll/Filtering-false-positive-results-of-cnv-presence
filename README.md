@@ -28,55 +28,55 @@ Filtering folder
 
 
 
-|__bed_files
+|_____bed_files
 
 
-|       |_coverage_file1
+|       |_____coverage_file1
 
 
-|       |_covearge_file2
+|       |_____covearge_file2
 
 
-|       |...
-
-
-|
-
-
-|__cnv_probabilities
-
-
-|       |_ovary
-
-
-|       |_stomach
-
-
-|       |_cancer_kind3
-
-
-|       |... 
+|       |_____...
 
 
 |
 
 
-|__src
+|_____cnv_probabilities
+
+
+|       |_____ovary
+
+
+|       |_____stomach
+
+
+|       |_____cancer_kind3
+
+
+|       |_____... 
 
 
 |
 
 
-|__cns_file
+|_____src
 
 
-|__files_length.txt
+|
 
 
-|__start_filter
+|_____cns_file
 
 
-|__inf
+|_____files_length.txt
+
+
+|_____start_filter
+
+
+|_____inf
 
 So, you can start filering - just run "start_filter" script.
 
