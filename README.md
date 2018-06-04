@@ -1,12 +1,13 @@
 # Filtering-false-positive-results-of-cnv-presence
 
-These scripts allow you to filter false positive results of CNVkit tool when you have not health tissue samples.
+These scripts allow you to filter false positive results of CNVkit tool when you have not healthy tissue samples.
+CNVkit - http://cnvkit.readthedocs.io/en/stable/ . Article about CNVkit - https://www.ncbi.nlm.nih.gov/pubmed/27100738 .
 To run it you must have only python3, matplotlib and numpy. 
 This method based on Bayesian model and showed good theoretical results, but it is not tested on real people now.
 
 To start you should make some preparations:
 
-Firstly, you should have coverage files for every reference file and sample file. Coverage files must have coverage for every bin in target bed file. All files shuold have normalized coverage, otherwise you should create file "files_length.txt" with count of reads for every bedfile bedfile. Also all coverage files must be in folder "bed_files"
+Firstly, you should have coverage files for every reference file and sample file. Coverage files must have coverage for every bin in target bed file. All files shuold have normalized coverage, otherwise you should create file "files_length.txt" with count of reads for every bedfile. Also all coverage files must be in folder "bed_files". You can use http://bedtools.readthedocs.io/en/latest/content/tools/coverage.html .
 
 Secondly, there must be folder with name "cnv_probabilities" with "probability files", these files must contain cnv probability for every target gen for all cancer kind you are interested in.
 
