@@ -14,8 +14,12 @@ Secondly, there must be folder with name "cnv_probabilities" with "probability f
 
 Thirdly, for your tumor sample you should specify file "inf" when cancer kind and coverage file name must be written. 
 File should contain:
-<cancer_kind>
-<coverage bed file name>
+
+
+cancer_kind
+
+
+coverage bed file name
   
 Note, cancer_kind must be named as cnv probabilty file in cnv_probobalites folder.
 
@@ -46,9 +50,7 @@ for every region in cns file.
 
 Requirements:
 
-
 python3
-
 
 matplotlib
 
@@ -56,4 +58,4 @@ matplotlib
 numpy
 
 
-Ubuntu 16.04, but it was not tested on something other.
+Ubuntu 16.04, but it was not tested on anything else.
