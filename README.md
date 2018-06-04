@@ -39,7 +39,7 @@ project folder
 </pre>
 
 
-So, you can start filering - just run "start_filter" script.
+Now you can start filering - just run "start_filter" script.
 
 
 Requirements:
