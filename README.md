@@ -7,23 +7,24 @@ This method based on Bayesian model and showed good theoretical results, but it 
 
 To start you should make some preparations:
 
-Firstly, you should have coverage files for every reference file and sample file. Coverage files must have coverage for every bin in target bed file. All files shuold have normalized coverage, otherwise you should create file "files_length.txt" with count of reads for every bedfile. Also all coverage files must be in folder "bed_files". You can use http://bedtools.readthedocs.io/en/latest/content/tools/coverage.html .
+<b>Firstly</b>, you should have coverage files for every reference file and sample file. Coverage files must have coverage for every bin in target bed file. All files shuold have normalized coverage, otherwise you should create file "files_length.txt" with count of reads for every bedfile. Also all coverage files must be in folder "bed_files". You can use http://bedtools.readthedocs.io/en/latest/content/tools/coverage.html .
 
-Secondly, there must be folder with name "cnv_probabilities" with "probability files", these files must contain cnv probability for every target gen for all cancer kind you are interested in.
+<b>Secondly</b>, there must be folder with name "cnv_probabilities" with "probability files", these files must contain cnv probability for every target gen for all cancer kind you are interested in.
 
 
-Thirdly, for your tumor sample you should specify file "inf" when cancer kind and coverage file name must be written. 
+<b>Thirdly</b>, for your tumor sample you should specify file "inf" when cancer kind and coverage file name must be written. 
 File should contain:
 
 
-cancer_kind
+<i>cancer_kind</i>
 
 
-coverage bed file name
+<i>coverage bed file name </i>
+  
   
 Note, cancer_kind must be named as cnv probabilty file in cnv_probobalites folder.
 
-Fourthly, you can run scripts without cns file after CNVkit, but it is strongly recommended to use cns file for more accurate results. 
+<b>Fourthly</b>, you can run scripts without cns file after CNVkit, but it is strongly recommended to use cns file for more accurate results. 
 
 So, folder tree must be like that:
 <pre>
@@ -48,7 +49,7 @@ Now you can start filering - just run "start_filter" script. In output file  "re
 for every region in cns file.
 
 
-Requirements:
+<b>Requirements</b>:
 
 python3
 
