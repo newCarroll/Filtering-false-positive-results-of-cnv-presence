@@ -21,7 +21,7 @@ Note, cancer_kind must be named as cnv probabilty file in cnv_probobalites folde
 Fourthly, you can run scripts without cns file after CNVkit, but it is strongly recommended to use cns file for more accurate results. 
 
 So, folder tree must be like that:
-
+<pre>
 project folder
 ├── bed_files
 │   └── coverage_file1
@@ -36,13 +36,22 @@ project folder
 └── files_length.txt
 └── cns_file
 └── start_filter
+</pre>
 
 
 So, you can start filering - just run "start_filter" script.
 
 
 Requirements:
+
+
 python3
+
+
 matplotlib
+
+
 numpy
+
+
 Ubuntu 16.04, but it was not tested on something other.
