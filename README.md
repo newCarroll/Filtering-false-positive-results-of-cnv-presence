@@ -2,7 +2,7 @@
 
 These scripts allow you to filter false positive results of CNVkit tool when you have not healthy tissue samples.
 CNVkit - http://cnvkit.readthedocs.io/en/stable/ . Article about CNVkit - https://www.ncbi.nlm.nih.gov/pubmed/27100738 .
-To run it you must have only python3, matplotlib and numpy. 
+To run filtering scripts you shuold have only python3, matplotlib and numpy. 
 This method based on Bayesian model and showed good theoretical results, but it is not tested on real people now.
 
 To start you should make some preparations:
