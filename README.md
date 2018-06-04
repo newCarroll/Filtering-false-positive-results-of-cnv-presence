@@ -39,7 +39,8 @@ project folder
 </pre>
 
 
-Now you can start filering - just run "start_filter" script.
+Now you can start filering - just run "start_filter" script. In output file  "result" you wiil see probability of cnv 
+for every region in cns file.
 
 
 Requirements:
